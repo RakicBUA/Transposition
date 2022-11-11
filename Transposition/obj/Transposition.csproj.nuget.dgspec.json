@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rakic\\RiderProjects\\Transposition\\Transposition\\Transposition.csproj": {}
+    "H:\\5c\\transposition\\Transposition\\Transposition.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rakic\\RiderProjects\\Transposition\\Transposition\\Transposition.csproj": {
+    "H:\\5c\\transposition\\Transposition\\Transposition.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rakic\\RiderProjects\\Transposition\\Transposition\\Transposition.csproj",
+        "projectUniqueName": "H:\\5c\\transposition\\Transposition\\Transposition.csproj",
         "projectName": "Transposition",
-        "projectPath": "C:\\Users\\rakic\\RiderProjects\\Transposition\\Transposition\\Transposition.csproj",
-        "packagesPath": "C:\\Users\\rakic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rakic\\RiderProjects\\Transposition\\Transposition\\obj\\",
+        "projectPath": "H:\\5c\\transposition\\Transposition\\Transposition.csproj",
+        "packagesPath": "C:\\Users\\rakic.nemanja\\.nuget\\packages\\",
+        "outputPath": "H:\\5c\\transposition\\Transposition\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rakic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rakic.nemanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
