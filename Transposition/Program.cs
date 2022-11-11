@@ -1,110 +1,66 @@
 ﻿Console.WriteLine("1 für Verschlüsselung/ 2 für Entschlüsselung");
-string eingabe = Console.ReadLine();
+var eingabe = Console.ReadLine();
 if (eingabe == "1")
 
 {
     Console.WriteLine("Wie lange ist die Blocklänge?");
-    int blocklange = Convert.ToInt32(Console.ReadLine());
-    string text = File.ReadAllText(@"H:\5c\Testfile.txt");
+    var blocklange = Convert.ToInt32(Console.ReadLine());
+    var text = File.ReadAllText(@"C:\C#\Testfile.txt");
     text = text.Replace(" ", "");
-    Console.WriteLine(text);
-    int zeichen = text.Length;
-    int zeile = zeichen / blocklange;
-    char[,] board = new char[zeile, blocklange];
-    int row = board.GetLength(0);
-    int zeilen = board.GetLength(1);
-    FileStream sb = new FileStream(@"H:\5c\Testfile.txt", FileMode.OpenOrCreate);
-    text.Replace(" ", "");
-    Console.WriteLine(text);
-    StreamWriter sw = new StreamWriter(sb);
-    int zahl = 0;
-
-    for (int i = 0; i < row; i++)
-    {
 
 
-
-
-        for (int j = 0; j < zeilen; j++)
+    if (text.Length % blocklange != 0)
+        do
         {
+            text = text + "A";
+        } while (text.Length % blocklange != 0);
 
+    var zeile = text.Length / blocklange;
+    Console.WriteLine(text);
+    var board = new char[zeile, blocklange];
+    var row = board.GetLength(0);
+    var zeilen = board.GetLength(1);
+    var sb = new FileStream(@"C:\C#\Testfile.txt", FileMode.OpenOrCreate);
+    text.Replace(" ", "");
+    var sw = new StreamWriter(sb);
+    var zahl = 0;
 
-            Console.Write(board[i, j] = text[zahl++]);
-
-        }
+    for (var i = 0; i < row; i++)
+    {
+        for (var j = 0; j < zeilen; j++) Console.Write(board[i, j] = text[zahl++]);
 
         Console.WriteLine();
-
-
-
-
-
     }
 
     Console.WriteLine("Verschlüsselter Text");
-    for (int i = 0; i < zeilen; i++)
-    {
-
-
-        for (row = 0; row < board.GetLength(0); ++row)
-        {
-
-
-            sw.Write(board[row, i]);
-
-
-
-        }
-
-    }
+    for (var i = 0; i < zeilen; i++)
+    for (row = 0; row < board.GetLength(0); ++row)
+        sw.Write(board[row, i]);
     sw.Close();
-
-
 }
 else
 {
-
-
-    string verschlusselttext = File.ReadAllText(@"H:\5c\Testfile.txt");
+    var verschlusselttext = File.ReadAllText(@"C:\C#\Testfile.txt");
     Console.WriteLine(verschlusselttext);
     Console.WriteLine("Wie lange ist die Blocklänge?");
-    int blocklange1 = Convert.ToInt32(Console.ReadLine());
-    int zeichen1 = verschlusselttext.Length;
-    int zeile1 = zeichen1 / blocklange1;
-    char[] plain = new char[zeichen1];
+    var blocklange1 = Convert.ToInt32(Console.ReadLine());
+    var zeile1 = verschlusselttext.Length / blocklange1;
+    var board2 = new char[zeile1, blocklange1];
+    var row2 = board2.GetLength(0);
+    var zeilen2 = board2.GetLength(1);
+    var zahl2 = 0;
 
 
-    char[,] board2 = new char[zeile1, blocklange1];
-    int row2 = board2.GetLength(0);
-    int zeilen2 = board2.GetLength(1);
-
-    int zahl2 = 0;
-    for (int i = 0; i < row2; i++)
+    for (var i = 0; i < row2; i++)
     {
-
-
-
-
-        for (int j = 0; j < zeilen2; j++)
-        {
-
-
-            Console.Write(board2[i, j] = verschlusselttext[zahl2++]);
-
-        }
-
+        for (var j = 0; j < zeilen2; j++) Console.Write(board2[i, j] = verschlusselttext[zahl2++]);
         Console.WriteLine();
-
-
-
-        for (int x = 0; i < length; i++)
-        {
-
-        }
-
-
-
-
-
     }
+
+    // string cxt = null;
+    //
+    // for (var i = 1; i < plain.Length / blocklange1; i++) plain[i * blocklange1] = cxt[plain.Length / blocklange1 + i];
+    //
+    // Console.WriteLine(plain);
+    // for (var j = 0; j < plain.Length / 2; j++) plain[j * blocklange1] = cxt[j];
 }

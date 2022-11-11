@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yN4XdLvp/g7ANbDrHD4M1hGgR8/HoBxoOPKS1BeuSduP+21cT8aKOTHVRWkIb3qhsu13frUKh8czJuzd0Gnrjg==",
+  "dgSpecHash": "C7NEfuJCRSqm2FGfHBPaBLuoHF+5MbPTzNRh/+lEl/BDSWwlRWfJaVpPF+3PvyXYEL+xmi4iC7pVwfR3ZkFoPg==",
   "success": true,
-  "projectFilePath": "H:\\5c\\transposition\\Transposition\\Transposition.csproj",
+  "projectFilePath": "C:\\Users\\rakic\\Documents\\c#\\Transposition\\Transposition.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

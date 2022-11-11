@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rakic.nemanja\\.nuget\\packages\\": {}
+    "C:\\Users\\rakic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\5c\\transposition\\Transposition\\Transposition.csproj",
+      "projectUniqueName": "C:\\Users\\rakic\\Documents\\c#\\Transposition\\Transposition.csproj",
       "projectName": "Transposition",
-      "projectPath": "H:\\5c\\transposition\\Transposition\\Transposition.csproj",
-      "packagesPath": "C:\\Users\\rakic.nemanja\\.nuget\\packages\\",
-      "outputPath": "H:\\5c\\transposition\\Transposition\\obj\\",
+      "projectPath": "C:\\Users\\rakic\\Documents\\c#\\Transposition\\Transposition.csproj",
+      "packagesPath": "C:\\Users\\rakic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rakic\\Documents\\c#\\Transposition\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rakic.nemanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rakic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
