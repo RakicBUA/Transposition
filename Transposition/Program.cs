@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using System.Globalization;
+using Microsoft.VisualBasic;
 
 Console.WriteLine("1 für Verschlüsselung/ 2 für Entschlüsselung");
 var eingabe = Console.ReadLine();
@@ -49,6 +50,22 @@ else
     var zeile1 = verschlusselttext.Length / blocklange1;
     var zahl2 = 0;
     char[,] array = new char[blocklange1, zeile1];
+    char[,] array2 = new char[zeile1, blocklange1];
+    int row = array2.GetLength(0);
+    int zeilen = array2.GetLength(1);
+    int zahl3=0;
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < zeilen; j++)
+        {
+            Console.Write(array2[i, j]=verschlusselttext[zahl3++]);
+        }
+
+        Console.WriteLine();
+    }
+        
+    
     
     
     //HILFE DURCH ERMIN!
