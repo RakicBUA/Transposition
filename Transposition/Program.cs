@@ -1,4 +1,6 @@
-﻿Console.WriteLine("1 für Verschlüsselung/ 2 für Entschlüsselung");
+﻿using Microsoft.VisualBasic;
+
+Console.WriteLine("1 für Verschlüsselung/ 2 für Entschlüsselung");
 var eingabe = Console.ReadLine();
 if (eingabe == "1")
 
@@ -45,18 +47,35 @@ else
     Console.WriteLine("Wie lange ist die Blocklänge?");
     var blocklange1 = Convert.ToInt32(Console.ReadLine());
     var zeile1 = verschlusselttext.Length / blocklange1;
-    var board2 = new char[zeile1, blocklange1];
-    var row2 = board2.GetLength(0);
-    var zeilen2 = board2.GetLength(1);
     var zahl2 = 0;
+    char[,] array = new char[blocklange1, zeile1];
+    
+    
+    //HILFE DURCH ERMIN!
 
-
-    for (var i = 0; i < row2; i++)
+    for (int i = 0; i < array.GetLength((0)); i++)
     {
-        for (var j = 0; j < zeilen2; j++) Console.Write(board2[i, j] = verschlusselttext[zahl2++]);
-        Console.WriteLine();
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = verschlusselttext[zahl2++];
+        }
     }
 
+    for (int i = 0; i < verschlusselttext.Length; i++)
+    {
+        for (int j = 0; j < array.GetLength(0); j++)
+        {
+            Console.Write(array[j,i]);
+        }
+    }
+    
+    // for (var i = 0; i < row2; i++)
+    // {
+    //     for (var j = 0; j < zeilen2; j++) Console.Write(board2[i, j] = verschlusselttext[zahl2++]);
+    //     Console.WriteLine();
+    // }
+
+        
     // string cxt = null;
     //
     // for (var i = 1; i < plain.Length / blocklange1; i++) plain[i * blocklange1] = cxt[plain.Length / blocklange1 + i];
